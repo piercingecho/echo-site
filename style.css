@@ -1,0 +1,84 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Verdana;
+}
+
+
+.sliding_title {
+  font-family: "Bitcount Grid Double", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size:40px;
+  border: 6px solid #55ee55;
+  background-color: black;
+  color: #55ee55;
+}
+
+.barcode {
+  margin: 0px;
+color: #55ee55;
+
+  text-align: center;
+  font-family: "Libre Barcode 128 Text", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 6vw;
+}
+
+.column_left {
+  float: left;
+  margin-left: 7%;
+  width: 10%;
+}
+.column_main {
+    float: left;
+    width: 56%;
+}
+
+.flex-container {
+    display:flex;
+    flex-direction: row;
+}
+
+li.currently_header {
+    list-style-type: none;
+    font-size: 30px;
+}
+
+li.currently_item {
+    list-style-type: none;
+}
+
+/* The following is used for the scrolling "welcome to the echo chamber.
+   Source: https://stackoverflow.com/questions/45847392/pure-css-continuous-horizontal-text-scroll-without-break*/
+
+.wrapper {
+  max-width: 100%;
+  width: 100%;
+  padding: 0px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: marquee 10s linear infinite;
+}
+
+.marquee h1 {
+  display: inline-block;
+  margin: 0px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
