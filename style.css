@@ -3,7 +3,13 @@ body {
   color: white;
   font-family: Verdana;
 }
-
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: orbitron;
+}
 
 .sliding_title {
   font-family: "Bitcount Grid Double", system-ui;
@@ -30,8 +36,36 @@ color: #55ee55;
 .column_left {
   float: left;
   margin-left: 7%;
-  width: 10%;
+  width: 15%;
 }
+
+.spans_column {
+  width: 100%;
+}
+
+ul {
+    padding-left: 0;
+}
+
+button {
+    cursor:pointer;
+}
+
+
+.cyber_btn {
+  border-color: #55ee55;
+  border-width: 1px 3px 3px 5px;
+  margin-bottom: 5px;
+  height: 25px;
+  border-radius: 5px;
+  
+  font-family: "Orbitron", sans-serif;
+  text-transform: uppercase;
+  color: #55ee55;
+  background-color: black;  
+  padding: 0px 7px 0px 7px;
+}
+
 .column_main {
     float: left;
     width: 56%;
@@ -43,12 +77,15 @@ color: #55ee55;
 }
 
 li.currently_header {
+  font-family: orbitron;
     list-style-type: none;
     font-size: 30px;
+    padding-left: 0;
 }
 
 li.currently_item {
     list-style-type: none;
+    padding-left: 0;
 }
 
 /* The following is used for the scrolling "welcome to the echo chamber.
