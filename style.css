@@ -1,3 +1,7 @@
+:root {
+  --trim: #55ee55;
+}
+
 body {
   background-color: black;
   color: white;
@@ -17,14 +21,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   font-style: normal;
   font-size:40px;
-  border: 6px solid #55ee55;
+  border: 6px solid var(--trim);
   background-color: black;
-  color: #55ee55;
+  color: var(--trim);
 }
 
 .barcode {
   margin: 0px;
-color: #55ee55;
+color: var(--trim);
 
   text-align: center;
   font-family: "Libre Barcode 128 Text", system-ui;
@@ -53,7 +57,7 @@ button {
 
 
 .cyber_btn {
-  border-color: #55ee55;
+  border-color: var(--trim);
   border-width: 1px 3px 3px 5px;
   margin-bottom: 5px;
   height: 25px;
@@ -61,7 +65,7 @@ button {
   
   font-family: "Orbitron", sans-serif;
   text-transform: uppercase;
-  color: #55ee55;
+  color: var(--trim);
   background-color: black;  
   padding: 0px 7px 0px 7px;
 }
@@ -81,6 +85,7 @@ li.currently_header {
     list-style-type: none;
     font-size: 30px;
     padding-left: 0;
+    color: var(--trim);
 }
 
 li.currently_item {
