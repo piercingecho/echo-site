@@ -1,5 +1,6 @@
 :root {
-  --trim: #55ee55;
+  --trim: #76fe76;
+  --trim_complement: #ffdf9b;
 }
 
 body {
@@ -13,6 +14,7 @@ a {
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: orbitron;
+  color: var(--trim);
 }
 
 .sliding_title {
@@ -28,7 +30,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .barcode {
   margin: 0px;
-color: var(--trim);
+  color: var(--trim_complement);
 
   text-align: center;
   font-family: "Libre Barcode 128 Text", system-ui;
@@ -40,6 +42,12 @@ color: var(--trim);
 .column_left {
   float: left;
   margin-left: 7%;
+  width: 15%;
+}
+
+.column_right {
+  float: right;
+  margin-right: 7%;
   width: 15%;
 }
 
@@ -62,7 +70,8 @@ button {
   margin-bottom: 5px;
   height: 25px;
   border-radius: 5px;
-  
+
+  font-size: 1.2vw;
   font-family: "Orbitron", sans-serif;
   text-transform: uppercase;
   color: var(--trim);
@@ -72,7 +81,8 @@ button {
 
 .column_main {
     float: left;
-    width: 56%;
+    width: 50%;
+    margin-left: 2%;
 }
 
 .flex-container {
@@ -84,14 +94,49 @@ li.currently_header {
   font-family: orbitron;
     list-style-type: none;
     font-size: 30px;
-    padding-left: 0;
-    color: var(--trim);
+    padding-left: 10px;
+    color: var(--trim_complement);
+    
 }
 
 li.currently_item {
     list-style-type: none;
-    padding-left: 0;
+    padding-left: 20px;
 }
+
+li.currently_item a {
+  text-decoration: underline;
+}
+
+
+.header {
+  text-decoration: underline;
+  text-align: center;
+}
+
+
+.friend_header {
+    font-size: 1.5vw;
+    color: var(--trim_complement);
+    margin: 0px;
+    text-align: right;
+}
+
+.friend_caption {
+  font-size: 0.8vw;
+  margin: 2px;
+  text-align: right;
+}
+
+.friend_image {
+  width: 12vw;
+  height: auto;
+  align-items: right;
+  display: block;
+  margin-left: auto;
+}
+
+
 
 /* The following is used for the scrolling "welcome to the echo chamber.
    Source: https://stackoverflow.com/questions/45847392/pure-css-continuous-horizontal-text-scroll-without-break*/
