@@ -116,23 +116,25 @@ li.currently_item a {
 
 
 .friend_header {
-    font-size: 1.5vw;
+    font-size: 1.8vw;
     color: var(--trim_complement);
     margin: 0px;
     text-align: right;
+    display:inline;
 }
 
 .friend_caption {
-  font-size: 0.8vw;
+  font-size: 1.4vw;
   margin: 2px;
-  text-align: right;
+  text-align: left;
 }
 
 .friend_image {
-  width: 12vw;
-  height: auto;
+  height: 2.4vh;
+  width: 8vw;
+  float: right;
   align-items: right;
-  display: block;
+
   margin-left: auto;
 }
 
