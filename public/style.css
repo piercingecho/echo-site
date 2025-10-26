@@ -17,6 +17,10 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--trim);
 }
 
+h2 {
+  text-decoration: underline;
+}
+
 .sliding_title {
   font-family: "Bitcount Grid Double", system-ui;
   font-optical-sizing: auto;
